@@ -196,11 +196,11 @@ I would like to thank Microverse team for providing linters configuration files.
 
 - **[Is_this_a_final_version_of_project]**
 
-  - [No,_there_are_many_more_features_to_be_added_which_will_be_released_soon.]
+  - No,\_there_are_many_more_features_to_be_added_which_will_be_released_soon.
 
 - **[What_are_the_features_which_can_be_added_by_external_developers]**
 
-  - [Scientific_Calculator,_Storing_history_of_calculations,_etc.]
+  - Scientific_Calculator,\_Storing_history_of_calculations,\_etc.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,31 +211,3 @@ I would like to thank Microverse team for providing linters configuration files.
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
