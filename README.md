@@ -194,13 +194,13 @@ I would like to thank Microverse team for providing linters configuration files.
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **[Is_this_a_final_version_of_project]**
+- **[Is this a final version of project]**
 
-  - No,\_there_are_many_more_features_to_be_added_which_will_be_released_soon.
+  - No, there are many more features to be added which will be released soon.
 
-- **[What_are_the_features_which_can_be_added_by_external_developers]**
+- **[What are the features which can be added by external developers]**
 
-  - Scientific_Calculator,\_Storing_history_of_calculations,\_etc.
+  - Scientific Calculator, Storing history of calculations, etc.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
