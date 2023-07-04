@@ -1,0 +1,48 @@
+.mainSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator{
+    width: 50%;
+    margin-top: 5%;
+    box-shadow: 1px;
+}
+
+.resultDisplayScreen{
+    width: 100%;
+    padding: 21px;
+    background-color: #858694;
+}
+
+#result{
+    font-size: 2.1rem;
+    text-align: right;
+    color: #ffffff;
+}
+
+#keypad{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+    background-color: #c2bfbd;
+}
+
+.calcBtn{
+    padding: 21px;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    border: none;
+    background-color: #e0e0e0;
+}
+
+.calcBtn[data-btntype = '0']{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.calcBtn[data-btntype = 'X'], .calcBtn[data-btntype = '/'], .calcBtn[data-btntype = '-'], .calcBtn[data-btntype = '+'], .calcBtn[data-btntype = '=']{
+    background-color: #f5913e;
+}
