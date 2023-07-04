@@ -1,4 +1,5 @@
 import './calculator.css';
+import PropTypes from 'prop-types';
 
 function ResultDisplayScreen() {
   return (<div className="resultDisplayScreen"><p id="result">0</p></div>);
@@ -14,7 +15,7 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
-  btnType: '',
+  btnType: PropTypes.string,
 };
 
 function Keypad() {
