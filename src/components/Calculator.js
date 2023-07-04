@@ -5,8 +5,17 @@ function ResultDisplayScreen() {
 }
 
 function Button(props) {
-  return <button type="button" data-btntype={props.btnType} className="calcBtn">{props.btnType}</button>;
+  const { btnType } = props;
+  return <button type="button" data-btntype={btnType} className="calcBtn">{btnType}</button>;
 }
+
+Button.defaultProps = {
+  btnType: '',
+};
+
+Button.propTypes = {
+  btnType: '',
+};
 
 function Keypad() {
   const keyTypes = ['AC', '+/-', '%', '/', '7', '8', '9', 'X', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
