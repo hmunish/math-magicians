@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 import calculate from '../logic/calculate';
 
-// console.log(calculate({total: '10', next: '15', operation: '+'}, 'any'));
-
 function ResultDisplayScreen(props) {
   const { result } = props;
   return (<div className="resultDisplayScreen"><p id="result">{result}</p></div>);
