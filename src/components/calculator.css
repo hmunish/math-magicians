@@ -50,3 +50,13 @@
 .calcBtn[data-btntype='='] {
   background-color: #f5913e;
 }
+
+.quote, .fetchStatus{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.fetchStatus{
+  font-size: 1.3rem;
+}
