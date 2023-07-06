@@ -1,6 +1,7 @@
+/* eslint-disable */
 import './calculator.css';
 import PropTypes from 'prop-types';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import calculate from '../logic/calculate';
 
 // console.log(calculate({total: '10', next: '15', operation: '+'}, 'any'));
@@ -55,6 +56,33 @@ Keypad.propTypes = {
   onClick: PropTypes.func,
 };
 
+function Quote() {
+  const [quote, setQuote] = useState('');
+  const [isError, setError] = useState(false);
+  const [isLoading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const getQuotes = async () => {
+      setLoading(true);
+      try{
+        const response = await fetch('https://api.api-ninjas.com/v1/quotes?category=happiness', {
+          headers: { 'X-Api-Key': '9zaOwzLz4dx1r3KbxXNevQ==bNAXY6f9uzraP3Ro'},
+        });
+        const resData = await response.json();
+        setQuote(resData[0].quote);
+        setLoading(false);
+      }catch(err){
+        setError(true);
+      }
+    }
+    getQuotes();
+  }, [])
+
+  if(isError) return <p className="fetchStatus">Error Loading Quote</p>
+  if(isLoading) return <p className="fetchStatus">Loading Quote...</p>
+  return <p className="quote">{quote}</p>
+}
+
 function Calculator() {
   const [result, setResult] = useState({ total: null, next: null, operation: null });
   const { total, next, operation } = result;
@@ -63,8 +91,10 @@ function Calculator() {
     const btn = e.target.dataset.btntype;
     setResult(calculate(result, btn));
   };
+
   return (
     <section className="calculator">
+      <Quote />
       <ResultDisplayScreen result={total || next || operation || '0'} />
       <Keypad onClick={updateOutput} />
     </section>
