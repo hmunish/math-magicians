@@ -65,7 +65,7 @@ function Calculator() {
   };
   return (
     <section className="calculator">
-      <ResultDisplayScreen result={total || next || operation || 0} />
+      <ResultDisplayScreen result={total || next || operation || '0'} />
       <Keypad onClick={updateOutput} />
     </section>
   );
