@@ -1,4 +1,3 @@
-/* eslint-disable */
 import operate from './operate';
 
 function isNumber(item) {
