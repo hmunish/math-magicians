@@ -43,8 +43,8 @@
   grid-column-end: 3;
 }
 
-.calcBtn[data-btntype='X'],
-.calcBtn[data-btntype='/'],
+.calcBtn[data-btntype='x'],
+.calcBtn[data-btntype='÷'],
 .calcBtn[data-btntype='-'],
 .calcBtn[data-btntype='+'],
 .calcBtn[data-btntype='='] {
