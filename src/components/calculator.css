@@ -1,6 +1,7 @@
 .mainSection {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -38,22 +39,22 @@
   background-color: #e0e0e0;
 }
 
-.calcBtn[data-btntype='0'] {
+.calcBtn[data-btntype="0"] {
   grid-column-start: 1;
   grid-column-end: 3;
 }
 
-.calcBtn[data-btntype='x'],
-.calcBtn[data-btntype='÷'],
-.calcBtn[data-btntype='-'],
-.calcBtn[data-btntype='+'],
-.calcBtn[data-btntype='='] {
+.calcBtn[data-btntype="x"],
+.calcBtn[data-btntype="÷"],
+.calcBtn[data-btntype="-"],
+.calcBtn[data-btntype="+"],
+.calcBtn[data-btntype="="] {
   background-color: #f5913e;
 }
 
 .quote,
 .fetchStatus {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 1.5rem;
 }

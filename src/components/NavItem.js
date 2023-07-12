@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const NavItem = ({ path, textContent }) => (
   <li>
-    <Link to={path}>{textContent}</Link>
+    <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to={path}>
+      {textContent}
+    </NavLink>
   </li>
 );
 
