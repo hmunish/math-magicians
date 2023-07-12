@@ -96,9 +96,12 @@ function Calculator() {
   };
 
   return (
-    <section className="calculator">
-      <ResultDisplayScreen result={total || next || operation || '0'} />
-      <Keypad onClick={updateOutput} />
+    <section className="calcWrapper">
+      <p>Let&apos;s do some Math</p>
+      <section className="calculator">
+        <ResultDisplayScreen result={total || next || operation || '0'} />
+        <Keypad onClick={updateOutput} />
+      </section>
     </section>
   );
 }

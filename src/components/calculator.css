@@ -7,10 +7,20 @@
   gap: 50px 0;
 }
 
+.calcWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.calcWrapper > p {
+  font-size: 1.9rem;
+  font-weight: 700;
+  font-family: cursive;
+}
+
 .calculator {
   width: 50%;
-  margin-top: 5%;
-  box-shadow: 1px 1px 1px;
 }
 
 .resultDisplayScreen {
