@@ -1,5 +1,5 @@
 header {
-  flex-basis: 100%;
+  width: 100%;
   padding: 15px 0;
   display: flex;
   justify-content: space-around;
